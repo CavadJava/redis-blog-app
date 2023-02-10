@@ -19,6 +19,11 @@ public class PostController {
         return postService.findAll();
     }
 
+    @GetMapping("/id")
+    public Post get(@RequestParam("id") Long id) {
+        return postService.findAllBy(id);
+    }
+
     @PostMapping()
     public Post save(@RequestBody Post post) {
         return postService.save(post);
