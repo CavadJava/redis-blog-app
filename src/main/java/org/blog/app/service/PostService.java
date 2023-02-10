@@ -24,4 +24,8 @@ public class PostService {
     public Post save(Post post) {
         return postRepository.save(post);
     }
+
+    public void remove(Long id) {
+        postRepository.deleteById(id);
+    }
 }

@@ -28,4 +28,9 @@ public class PostController {
     public Post save(@RequestBody Post post) {
         return postService.save(post);
     }
+
+    @DeleteMapping("/id")
+    public void remove(@RequestParam("id") Long id) {
+        postService.remove(id);
+    }
 }
