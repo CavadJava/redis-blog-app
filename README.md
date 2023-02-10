@@ -1,2 +1,2 @@
 # redis-blog-app
-spring cache,redis,postgres
+spring cache, redis, postgres
